@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <title>Anak Sehat</title>
 </head>
-
 <body>
-
-    <header>
-        <nav>
-            <div class="logo">
-                <h4>Anak Sehat</h4>
-            </div>
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#">Reccomendation</a>
-                    <ul>
-                        <li><a href="#">Foods</a></li>
-                        <li><a href="#">Drinks</a></li>
-                        <li><a href="#">Fruits</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand logo">
+      <img src="./public/AnakSehat.png" alt="Logo AnakSehat">
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Nutrition</a></li>
+        <li><a href="#">Recomendation</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero">
+    <div class="tagline">
+      <h1>
+        AYO CEGAH STUNTING
+      </h1>
+      <h3>Kenali Stunting dan Penyebabnya</h3>
+      <p>Hitung gizi, rencanakan makanan, berbagi cerita dan tumbuh berkembang bersama AnakSehat</p>
+      <div class="button-hero">
+        <button class="more">Pelajari Selengkapnya</button>
+        <button class="video">Putar Vidio</button>
+      </div>
+    </div>
+    <div class="gambar">
+      <img src="./public/gambarAnak.png" alt="Gambar Anak">
+    </div>
+  </div>
+  <main>
+    <article class="article-one">
+      <div class="gambar-article">
+        <img src="./public/ApaituStunting.png" alt="Gambar Anak">
+      </div>
+      <div class="caption">
+        <h2>Apa itu Stunting?</h2>
+      <p>Stunting adalah kondisi gagal tumbuh pada anak balita (bayi di bawah 5 tahun) akibat dari kekurangan gizi kronis sehingga anak terlalu pendek untuk usianya. Kekurangan gizi terjadi sejak bayi dalam kandungan pada masa awal setelah bayi lahir akan tetapi, kondisi stunting baru nampak setelah bayi berusia 2 tahun. Balita pendek (stunted) dan sangat penting (severety stunted) adalah balita dengan panjang badan (PB/U) dan tinggi badan (TB/U) menurut umurnya dibandingkan dengan standar baku WHO-MGRS tahun 2006.
+      </p>
+      </div>
+    </article>
+  </main>
+  
+  
     <footer>
         <p>Copyright AnakSehat</p>
     </footer>
