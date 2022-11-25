@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/sultantirtaa/AnakSehat/issues"
   },
-  "homepage": "https://github.com/sultantirtaa/AnakSehat#readme"
+  "homepage": "https://github.com/sultantirtaa/AnakSehat#readme",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
 }
