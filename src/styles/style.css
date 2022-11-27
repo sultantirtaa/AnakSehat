@@ -18,9 +18,10 @@ h6 {
 /* Jumbotron */
 
 #home {
-  background-image: url("./../public/Hero.png");
+  top: 100px;
+  background-image: url("./../public/herobg.png");
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -106,10 +107,6 @@ h6 {
 
 /* article */
 
-main {
-  width: 1300px;
-  margin: 0 auto;
-}
 
 #content {
   padding: 32px;
@@ -250,7 +247,7 @@ main {
 
 .profile-box img {
   width: 100px;
-  height: 120px;
+  /* height: 120px; */
 }
 
 #profiles .profile-box .biodata {
@@ -277,7 +274,7 @@ main {
 
   body {
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     color: #424242;
@@ -399,12 +396,6 @@ main {
     margin-top: 40px;
     margin-left: 120px;
     flex-grow: 2;
-  }
-  
-  .gambar{
-    /* max-width: 35%; */
-    flex-grow: 2;
-    margin-right: 120px;
   }
   
   .button-hero{
