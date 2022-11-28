@@ -1,3 +1,5 @@
+@import url('./components/articles.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +20,8 @@ h6 {
 /* Jumbotron */
 
 #home {
-  top: 100px;
+  /* position: relative; */
+  /* top: 100px; */
   background-image: url("./../public/herobg.png");
   width: 100%;
   /* height: 100vh; */
@@ -105,131 +108,6 @@ h6 {
   color: black;
 }
 
-/* article */
-
-
-#content {
-  padding: 32px;
-}
-
-.headline {
-  overflow: auto;
-}
-
-.headline-figure {
-  width: 450px;
-  float: left;
-}
-
-.headline-figure img {
-  width: 100%;
-  margin-left: 50px;
-}
-
-.headline-content {
-  width: 600px;
-  float: left;
-  padding: 16px 32px;
-  margin-left: 60px;
-}
-
-.headline-title {
-  font-size: 34px;
-  font-weight: 600;
-}
-
-.headline-description {
-  font-size: 16px;
-  margin-top: 12px;
-}
-
-.headline-button {
-  text-transform: uppercase;
-  margin-top: 10px;
-  cursor: pointer;
-  padding: 8px 16px;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  background-color: #379237;
-  transition: opacity 0.3s;
-}
-
-.headline-button:hover {
-  opacity: 0.8;
-}
-
-/* Article */
-
-.article {
-  width: 1000px;
-  margin: 60px auto;
-  text-align: center;
-}
-
-.article-label {
-  font-size: 32px;
-  font-weight: lighter;
-}
-
-.article-label::after {
-  content: '';
-  margin-top: 16px;
-  display: block;
-  border-bottom: 1px solid #eeeeee;
-}
-
-/* post */
-
-.posts {
-  margin: 32px auto auto;
-  text-align: left;
-  overflow: auto;
-}
-
-.post-item {
-  float: left;
-  margin: 16px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 300px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.post-item-content {
-  padding: 16px 32px 32px 32px;
-}
-
-.post-item-thumbnail {
-  width: 100%;
-}
-
-.post-item-date {
-  font-size: 15px;
-}
-
-.post-item-date-author {
-  color: red;
-  text-decoration: none;
-}
-
-.post-item-title {
-  font-weight: 600;
-  font-size: 28px;
-  margin-top: 16px;
-  transition: 0.3s opacity;
-}
-
-.post-item-title:hover {
-  opacity: 0.5;
-}
-
-.post-item-description {
-  margin-top: 16px;
-  font-size: 14px;
-  line-height: 1.5em;
-}
-
 /* About Us */
 
 #profiles {
@@ -278,6 +156,7 @@ h6 {
     display: flex;
     flex-direction: column;
     color: #424242;
+    /* display: flex; */
   }
   img {
     max-width: 100%;
