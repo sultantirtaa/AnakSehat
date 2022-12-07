@@ -1,0 +1,180 @@
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+/* Jumbotron */
+
+#home {
+    background-image: url("../../public/img/hero.png");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#home h2 {
+    color: #379237;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    color: #008200;
+    font-size: 0.9rem;
+    line-height: 35px;
+    font-weight: 400;
+    text-shadow: -1px 1px 5px rgb(255 255 255);
+}
+
+#home .button-hero {
+    margin-top: 30px;
+}
+
+#home button {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    width: 225px;
+}
+
+#home button.more {
+    color: rgb(255, 255, 255);
+    background: #379237c7;
+    border-radius: 35px;
+    transition: all 0.3s;
+    border: 0;
+    margin: 0;
+}
+
+#home button.more:hover {
+    cursor: pointer;
+    color: white;
+    background: #379237;
+}
+
+#home button.video {
+    color: rgb(255, 255, 255);
+    background: #379237c7;
+    border-radius: 35px;
+    transition: all 0.3s;
+    border: 0;
+    margin-bottom: 22px;
+}
+
+#home button.video:hover {
+    cursor: pointer;
+    color: white;
+    background: #379237;
+}
+
+/* features */
+
+#features {
+    padding: 4vw 8vw 0 8vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#features .features-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 30px;
+}
+
+#features .features-box {
+    text-align: center;
+    padding: 10px;
+}
+
+#features .features-box i {
+    font-size: 4rem;
+    color: #424242;
+}
+
+#features .features-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #343434;
+    padding: 13px 0 7px 0;
+}
+
+#features .features-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #424242;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero h1 {
+    color: rgba(0, 0, 0, 0.797);
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 88px;
+    text-shadow: -2px 2px 5px rgb(255, 255, 255);
+}
+
+.hero h3 {
+    color: #424242;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    text-shadow: -1px 1px 5px rgb(255 255 255);
+}
+
+.hero p {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 34px;
+}
+
+.tagline {
+    flex-grow: 2;
+}
+
+.button-hero {
+    justify-content: left;
+    align-items: center;
+}
+
+.button-hero button {
+    margin-left: 40px;
+    padding: 20px;
+    background-color: #389238;
+}
+
+article {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    padding: 50px;
+}
+
+main {
+    background-color: #38923832;
+}
+
+.gambar-article {
+    flex-grow: 2;
+    margin-right: 50px;
+}
+
+.caption {
+    flex-grow: 2;
+}

@@ -1,0 +1,104 @@
+.team-section {
+    background-color: #afd0af44;
+    min-height: 100vh;
+    padding: 70px 70px 30px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-section .section-title {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+}
+
+.team-section .section-title h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    color: #424242;
+    font-weight: 700;
+}
+
+.team-section .section-title p {
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0 0;
+    color: #424242;
+}
+.team-section .team-items {
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.team-section .team-items .item {
+    flex-basis: calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    transition: all 0.5s ease;
+    margin-bottom: 40px;
+}
+.team-section .team-items .item img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.team-section .team-items .item .inner {
+    position: relative;
+    z-index: 11;
+}
+.team-section .team-items .item .inner .info {
+    text-align: center;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+}
+.team-section .team-items .item:hover .info {
+    transform: translateY(-10px);
+}
+.team-section .team-items .item:hover {
+    transform: translateY(-10px);
+}
+.team-section .team-items .item .inner .info h5 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #5f895f;
+}
+.team-section .team-items .item .inner .info p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #5b8a5be9;
+    margin: 10px 0 0;
+}
+
+.team-section .team-items .item .inner .info .social-links {
+    padding-top: 15px;
+}
+
+.team-section .team-items .item .inner .info .social-links a {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: #529e52;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 0 2px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.team-section .team-items .item .inner .info .social-links a:hover {
+    box-shadow: 0 0 10px #000;
+}

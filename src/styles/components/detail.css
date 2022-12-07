@@ -1,0 +1,33 @@
+.recipe-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.row-food {
+    display: flex;
+}
+.column-left {
+    flex: 60%;
+    padding: 1rem;
+}
+.column-right {
+    flex: 40%;
+    padding: 1rem;
+}
+
+.food-summary,
+.food-recipe,
+.food-nutrition,
+.food-brackdown {
+    margin-bottom: 1rem;
+}
+.food-summary h4,
+.food-recipe h4,
+.food-nutrition h4 {
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+}
+
+.food-img {
+    float: left;
+}
