@@ -45,7 +45,7 @@ class FilterMenu extends HTMLElement {
                   top: 0; 
                   left: 30;
                   overflow-x: hidden; 
-                  width: 250px;
+                  width: 240px;
                   padding: 28px;
                   overflow: hidden; 
                   background-color: rgba(64, 136, 71, 0.4);

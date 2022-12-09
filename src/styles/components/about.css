@@ -66,6 +66,7 @@ h3 {
     text-decoration: none;
     color: inherit;
     font-size: 1.4em;
+    margin: 3px;
 }
 .card:hover {
     background: rgba(255, 255, 255, 0.264);

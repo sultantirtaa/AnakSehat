@@ -1,5 +1,17 @@
 @media screen and (min-width: 650px) {
 }
+
+@media screen and (max-width: 800px) {
+    .kalori-container .row-kalori .col-left {
+        flex: 100%;
+    }
+    .kalori-container .row-kalori .col-right {
+        flex: 100%;
+    }
+    .row-kalori {
+        flex-direction: column;
+    }
+}
 @media screen and (min-width: 800px) {
     .app-bar {
         grid-template-columns: 1fr auto;
@@ -33,7 +45,6 @@
 
 @media screen and (min-width: 850px) {
 }
-
 @media screen and (min-width: 1200px) {
 }
 

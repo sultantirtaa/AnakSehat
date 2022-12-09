@@ -24,52 +24,66 @@ const createRecipeItemTemplate = (recipe) => `
 `;
 
 const createRecipeDetailTemplate = (recipe) => `
-  <div class="row-food">
-  <div class="column-left">
-      <h2 class="food-title">${recipe.title}</h2>
-      <div id="food-source" class="food-source-name">
-          <p class="food-source">From <a href="${recipe.sourceUrl}">${recipe.sourceUrl}</a></p>
+  <!-- headline -->
+  <section id="content">
+    <article class="headline">
+      <figure class="headline-figure">
+        <img class="food-image" src="${recipe.image}" alt="${recipe.title}">
+      </figure>
+      <div class="headline-content">
+        <h1 class="headline-title">${recipe.title}
+        </h1>
+        <p class="headline-author">From <a href="${recipe.sourceUrl}">${recipe.sourceUrl}</a></p>
+        <div id="saveButtonContainer" class="food-action"></div>
+        <p class="headline-description">${recipe.summary}
+        </p>
       </div>
-      <div id="saveButtonContainer" class="food-action"></div>
-      <div class="food-summary">
-          <h4>Summary</h4>
-          <p>${recipe.summary}</p>
+    </article>
+  </section>
+
+  <!-- material -->
+  <section id="material">
+    <div class="row-material">
+      <div class="col">
+        <h1 class="ingredients-title">Ingredients</h1>
+        <img class="food-ingredients-image lazyload" data-src="${CONFIG.BASE_URL}recipes/${recipe.id}/ingredientWidget.png?${CONFIG.API_KEY}" alt="Ingredients">
       </div>
-      <div class="food-recipe">
-          <h4>Ingredients</h4>
-          <p class="food-ingredients">Bahan-bahan</p>
-          <img class="food-ingredients-image lazyload" data-src="${CONFIG.BASE_URL}recipes/${recipe.id}/ingredientWidget.png?${CONFIG.API_KEY}" alt="Ingredients">
-          <h4>Equipments</h4>
-          <p class="food-equipments">Alat</p>
-          <img class="food-equipments-image lazyload" data-src="${CONFIG.BASE_URL}recipes/${recipe.id}/equipmentWidget.png?${CONFIG.API_KEY}" alt="Equipments">
-          <h4>Instructions</h4>
-          <p>${recipe.analyzedInstructions
+      <div class="col">
+        <h1 class="equipments-title">Equipments</h1>
+        <img class="food-equipments-image lazyload" data-src="${CONFIG.BASE_URL}recipes/${recipe.id}/equipmentWidget.png?${CONFIG.API_KEY}" alt="Equipments">
+      </div>
+    </div>
+  </section>
+
+  <!-- information -->
+  <section class="information">
+    <div class="row-instruction">
+      <div class="col">
+        <h1 class="instruction-title">Instruction</h1>
+        <p>${recipe.analyzedInstructions
     .map(
       (instruction) => `
-              <ol>${instruction.steps
+                    <ol>${instruction.steps
     .map(
       (step) => `
-              <li>${step.step}</li>`,
+                    <li>${step.step}</li>`,
     ).join('')}</ol>
-              `,
+                    `,
     ).join('')}
-          </p>
+                </p>
       </div>
-      <div class="food-nutrition">
-          <h4>Nutrients</h4>
-          <div class="food-brackdown">
-          <li class="percent-protein" style="width: ${parseInt(recipe.nutrition.caloricBreakdown.percentProtein)}%;">${parseInt(recipe.nutrition.caloricBreakdown.percentProtein)}%</li>
-          <li class="percent-fat" style="width: ${parseInt(recipe.nutrition.caloricBreakdown.percentFat)}%;">${parseInt(recipe.nutrition.caloricBreakdown.percentFat)}%</li>
-          <li class="percent-carbs" style="width: ${parseInt(recipe.nutrition.caloricBreakdown.percentCarbs)}%;">${parseInt(recipe.nutrition.caloricBreakdown.percentCarbs)}%</li>         
-          </div>
+      <div class="col">
+        <h1 class="nutrients-title">Nutrients</h1>
+        <div class="button">
+          <button class="gray">Protein : ${parseInt(recipe.nutrition.caloricBreakdown.percentProtein)}%</button>
+          <button class="red">Fat : ${parseInt(recipe.nutrition.caloricBreakdown.percentFat)}%</button>
+          <button class="yellow">Carbohydrats : ${parseInt(recipe.nutrition.caloricBreakdown.percentCarbs)}%</button>
+        </div>
+        <img class="lazyload" data-src="${CONFIG.BASE_URL}recipes/${recipe.id}/nutritionLabel.png?${CONFIG.API_KEY}" alt="Nutrition Label">
       </div>
-  </div>
-  <div class="column-right">
-      <img class="food-image" src="${recipe.image}" alt="${recipe.title}">
-      <img class="lazyload" data-src="${CONFIG.BASE_URL}recipes/${recipe.id}/nutritionLabel.png?${CONFIG.API_KEY}" alt="Nutrition Label">
-  </div>
-  </div>  
-`;
+    </div>
+  </section>
+  `;
 
 const createBookmarkItemTemplate = (recipe) => `
   <div class="recipe-box">

@@ -5,6 +5,7 @@
 @import url("./components/detail.css");
 @import url("./components/bookmark.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("./components/nutrition.css");
 
 * {
     padding: 0;
@@ -14,7 +15,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     flex-direction: column;
     color: #424242;
@@ -103,16 +104,18 @@ a {
     align-items: center;
 }
 
+.app-bar .app-bar__navigation ul {
+    margin-bottom: 0;
+}
+
 .app-bar .app-bar__navigation ul li {
     list-style: none;
 }
 
 .app-bar .app-bar__navigation ul li a {
-    /* display: inline-block; */
     text-decoration: none;
     color: #fff;
-    padding: 4px;
-    /* margin-bottom: 5px; */
+    padding: 11px;
     width: 100%;
     text-decoration: none;
     font-size: 14px;

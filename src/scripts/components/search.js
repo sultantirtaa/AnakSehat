@@ -69,7 +69,10 @@ class SearchBar extends HTMLElement {
           border-radius: 20px;
           text-decoration:none;
         }
-
+        #bookmark > a{
+          text-decoration:none;
+          color:white;
+        }
         .search-container > button > svg {
           height: 11pt;
         }

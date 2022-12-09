@@ -4,7 +4,7 @@ import { createBookmarkItemTemplate } from '../templates/template-creator';
 const Bookmark = {
   async render() {
     return `
-    <div class="bookmark-continer">
+    <div class="bookmark-container">
       <h2><i class="fa-solid fa-bookmark icon-title"></i> Bookmarked Recipe</h2>
       <div class="bookmark-message"></div>
         <div class="recipe-content bookmark-content">
