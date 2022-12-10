@@ -89,15 +89,15 @@ class SearchBar extends HTMLElement {
 
         .search-container > input {
           padding: 21px 30px;
-          border-top-left-radius: 30px;
-          border-bottom-left-radius: 30px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
           border: 2px solid #519259;
         }
 
         .search-container > button {
           padding: 20px 38px;
-          border-top-right-radius: 30px;
-          border-bottom-right-radius: 30px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
         }
 
         .search-container > button > svg {

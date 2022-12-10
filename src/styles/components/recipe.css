@@ -1,6 +1,6 @@
 .recipe-container {
     display: grid;
-    gap: 20px 56px;
+    gap: 20px;
 }
 
 .recipe-message {

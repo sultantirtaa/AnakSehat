@@ -10,8 +10,7 @@ const Home = {
         <h3>Ciptakan Generasi Cerdas Tanpa Stunting</h3>
         <p>Hitung gizi, rencanakan makanan, berbagi cerita dan tumbuh berkembang bersama AnakSehat</p>
         <div class="button-hero">
-          <button class="more">Pelajari Selengkapnya</button>
-          <button class="video">Putar Vidio</button>
+          <button class="more"><a style="text-decoration: none;" href="#content">Pelajari Selengkapnya</a></button>
         </div>
       </div>
     </div>
