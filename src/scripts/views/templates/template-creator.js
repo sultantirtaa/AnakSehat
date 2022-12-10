@@ -1,11 +1,9 @@
-/* eslint-disable import/extensions */
-/* eslint-disable import/no-unresolved */
 import CONFIG from '../../globals/config';
 
 const createRecipeItemTemplate = (recipe) => `
 
 <div class="recipe-box">
-  <img src="${recipe.image}" alt="${recipe.title}">
+  <img class="lazyload" src="${recipe.image}" alt="${recipe.title}">
   <div class="food-info">
     <a href="${`/#/detail/${recipe.id}`}">${recipe.title}</a>
     <div class="food-facts">
@@ -28,7 +26,7 @@ const createRecipeDetailTemplate = (recipe) => `
   <section id="content">
     <article class="headline">
       <figure class="headline-figure">
-        <img class="food-image" src="${recipe.image}" alt="${recipe.title}">
+        <img class="food-image lazyload" src="${recipe.image}" alt="${recipe.title}">
       </figure>
       <div class="headline-content">
         <h1 class="headline-title">${recipe.title}
@@ -87,7 +85,7 @@ const createRecipeDetailTemplate = (recipe) => `
 
 const createBookmarkItemTemplate = (recipe) => `
   <div class="recipe-box">
-  <img src="${recipe.image}" alt="${recipe.title}">
+  <img class="lazyload" src="${recipe.image}" alt="${recipe.title}">
   <div class="food-info">
     <a href="${`/#/detail/${recipe.id}`}">${recipe.title}</a>
     <div class="food-facts">
