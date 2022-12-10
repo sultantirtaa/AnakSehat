@@ -59,7 +59,7 @@ const AboutUs = {
         <div class="column">
           <div class="card">
             <div class="img-container">
-              <img src="/user/sultan.jpg" />
+              <img src="/user/abe.jpeg" />
             </div>
             <h3>Samuel Abelino Simanullang</h3>
             <p>Frontend Developer</p>

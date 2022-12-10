@@ -55,7 +55,8 @@ const Home = {
             tetapi, kondisi stunting baru nampak setelah bayi berusia 2 tahun. Balita pendek (stunted) dan
             sangat penting (severety stunted) adalah balita dengan panjang badan (PB/U) dan tinggi badan
             (TB/U) menurut umurnya dibandingkan dengan standar baku WHO-MGRS tahun 2006.</p>
-          <button class="headline-button">Baca Selengkapnya</button>
+          <button class="headline-button"><a href="https://www.alodokter.com/stunting">Baca Selengkapnya
+          </a></button>
         </div>
       </section>
       </article>
@@ -66,7 +67,7 @@ const Home = {
           <article class="post-item">
             <img class="post-item-thumbnail" src="img/foto1.jpg" alt="">
             <div class="post-item-content">
-              <p class="post-item-date">Rabu, 22 September 2021 <a href="#" class="post-item-date-author">UNICEF
+              <p class="post-item-date">Rabu, 22 September 2021 <a href="https://www.unicef.org/indonesia/id/press-releases/pola-makan-anak-anak-balita-tidak-membaik-dalam-sepuluh-tahun-terakhir-dan-dapat" class="post-item-date-author">UNICEF
                 </a></p>
               <h1 class="post-item-title">Pola makan buruk</h1>
               <p class="post-item-description">NEW YORK, 22 September 2021 – Anak-anak berusia di bawah 2
