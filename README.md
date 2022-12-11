@@ -4,7 +4,7 @@ Tema			: Solusi Terkait Kesehatan dan Kesejahteraan Lingkungan
 Nama Anggota	: 
 <ol>
   <li>F269X0614 - Abdillah Nur Ridho</li>
-  <li>F14270243 - Kynta Putri Syakira</li>
+  <li>F142Y0243 - Kynta Putri Syakira</li>
   <li>F319X0863 - Samuel Abelino Simanullang</li>
   <li>F193X0389 - Sultan Tirta Firdaus</li>
 </ol>
